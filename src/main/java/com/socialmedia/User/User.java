@@ -10,6 +10,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @RequiredArgsConstructor
 @ToString
 public class User {
@@ -18,10 +19,10 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @NotNull
+    @NonNull
     private String username;
 
-    @NotNull
+    @NonNull
     private String password;
 
 //    private int yearOfBirth;
